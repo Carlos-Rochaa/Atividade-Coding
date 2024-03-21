@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+:root {
+  --font-color: #ffffff;
+  --background-color: #f6f7f8;
+  --black-color: #000000;
+  --red-color: #ff3131;
+  --green-color: #54cc0a;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(assets/restaurante/bg.png);
+  background-position: center;
+  padding: 30px;
+}
+
+.intro img {
+  border-radius: 100%;
+  width: 185px;
+  height: 185px;
+}
+
+.intro {
+  color: var(--font-color);
+}
+
+.name,
+.descricao {
+  margin: 7px;
+}
+
+.horario {
+  background-color: var(--green-color);
+  color: var(--font-color);
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.text {
+  text-align: center;
+  padding: 30px;
+}
+
+.burguer-img {
+  height: 8rem;
+  width: 7rem;
+  border-radius: 5px;
+}
+
+.organizacao {
+  display: grid;
+  grid-template-columns: 1;
+  gap: 10px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+}
+
+.produto {
+  display: flex;
+  gap: 10px;
+}
+
+.burguer-name {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.price {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.botao {
+  padding: 3px;
+  width: 2.5rem;
+  background-color: gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: #54cc0a;
+}
+
+.priceAndBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.rodape {
+  text-align: center;
+  padding: 30px;
+  margin-top: 20px;
+  background-color: var(--black-color);
+  color: var(--font-color);
+}
+
+.rodape i {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .organizacao {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+  }
+}
